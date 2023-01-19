@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Foo Bar Table</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="foobar.js"></script>
+	</head>
+	<body>
+		<a href="index.html">Home</a>
+		<h1>The Foo Bar Table</h1>
+		<p>Legends tell of a certain type of foo that preys on numbers that are divisible by 3.
+		Such legends also tell of a similar type of bar, which only hunts numbers that are divisible by 5.
+		It is also said that, on the occasion that a number is divisible by both 3 and 5, the foo and bar shall combine into a great new word.
+		But that is just myth. Or so we thought...</p>
+		<p>This table seeks to prove the existence of these elusive foos and bars. 
+		The left column is a sterile list of incrementing numbers. 
+		The right column also contains incrementing numbers, but these are vulnerable
+		to any devious foos and bars. Use the buttons to print a new entry of each, 
+		or to restart the experiment.</p>
+
+		<table id="foobar">
+			<colgroup>
+				<col span="1" style="width: 50%;">
+				<col span="1" style="width: 50%;">
+			</colgroup>
+			<tr>
+				<th>Control</th>
+				<th>Experimental</th> 
+			</tr>	
+		</table>
+		<button onclick='foobar()'>Continue the Foo Bar list.</button>
+		<button onclick='foobar_clear()'>Clear the Foo Bar list.</button>
+	</body>
+</html>
